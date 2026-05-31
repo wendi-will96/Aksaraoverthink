@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AksaraOverthink | Joki Tugas Gak Pake Ribet</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #0f0c29;
+            --primary: #ff007f;
+            --secondary: #7000ff;
+            --text-light: #ffffff;
+            --text-muted: #b3b3b3;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, var(--bg-color), #302b63, #24243e);
+            color: var(--text-light);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        header {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            background: -webkit-linear-gradient(45deg, #ff007f, #00f2fe);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 15px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 600;
+            box-shadow: 0 4px 15px rgba(255, 0, 127, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(255, 0, 127, 0.6);
+        }
+
+        /* Section Title */
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            margin: 60px 0 30px;
+            color: #fff;
+        }
+
+        /* Value Section */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 60px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary);
+        }
+
+        .card h3 {
+            margin: 15px 0;
+            color: #00f2fe;
+        }
+
+        /* How it works */
+        .steps {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            border-radius: 20px;
+            margin-bottom: 60px;
+        }
+
+        .step-item {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed rgba(255,255,255,0.2);
+        }
+
+        .step-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .step-item h4 {
+            color: var(--primary);
+            font-size: 1.3rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(0,0,0,0.5);
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="container">
+        <img src="https://placehold.co/500x300/0f0c29/00f2fe?text=Logo+Aksara+Overthink" alt="Logo AksaraOverthink" style="width: 250px; margin: 0 auto 20px; display: block; filter: drop-shadow(0 0 15px rgba(255, 0, 127, 0.6)); border-radius: 20px; border: 2px solid #ff007f;">
+        <h1>Tugas Kelar, Otak Tetep Pinter 🧠✨</h1>
+        <p>Gak cuma nerima file jadi terus lu plonga-plongo pas ditanya dosen. Di AksaraOverthink, tugas lu diberesin PLUS dibimbing dan dikasih "catetan sakti" biar lu paham 100% isinya. Maju presentasi? Udah pasti aura sigma!</p>
+        <a href="#order" class="btn">⚡ Gas, Order & Mentoring!</a>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">Kenapa Harus AksaraOverthink?</h2>
+        <div class="grid">
+            <div class="card">
+                <h2>🧠</h2>
+                <h3>Dibimbing Sampai Paham</h3>
+                <p>Bukan joki buta. Kita kasih brief & bedah tugasnya bareng lu. Dosen killer nanya? Lu tinggal senyum kalem aja.</p>
+            </div>
+            <div class="card">
+                <h2>⚡</h2>
+                <h3>Pengerjaan Sat-Set</h3>
+                <p>Gak pakai lama, tugas lu selesai sesuai deadline bahkan bisa lebih cepat.</p>
+            </div>
+            <div class="card">
+                <h2>🔒</h2>
+                <h3>Aman & Rahasia</h3>
+                <p>Identitas lu bakal dijaga ketat. Aman dari pantauan dosen atau guru.</p>
+            </div>
+            <div class="card">
+                <h2>❌</h2>
+                <h3>Bebas Plagiasi</h3>
+                <p>Hasil orisinal dan dikerjain teliti, bukan cuma modal copy-paste doang.</p>
+            </div>
+            <div class="card">
+                <h2>💰</h2>
+                <h3>Harga Anak Kos</h3>
+                <p>Tarif bersahabat yang gak bakal bikin dompet lu ikutan overthink.</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">Pilih Senjatamu</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>📝 Aksara Esai</h3>
+                <p>Pembuatan esai, paper, jurnal, dan makalah dari nol lengkap dengan sitasi.</p>
+            </div>
+            <div class="card">
+                <h3>📊 PPT Aesthetic</h3>
+                <p>Desain presentasi yang modern, ga kaku, dan bikin lu pede pas presentasi.</p>
+            </div>
+            <div class="card">
+                <h3>💡 Rangkuman</h3>
+                <p>Mind mapping atau resume buku/materi biar lu siap tempur pas ujian.</p>
+            </div>
+            <div class="card">
+                <h3>🎓 Skripsi Express</h3>
+                <p>Stuck di bab 1 sampe 5? Olah data atau revisian dospem, kita bantu beresin sampai lu pake toga!</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">Cara Order (Cuma 3 Langkah!)</h2>
+        <div class="steps">
+            <div class="step-item">
+                <h4>1. Kirim Detail Tugas</h4>
+                <p>Klik tombol order, kirim file atau instruksi tugas lu ke admin via WhatsApp.</p>
+            </div>
+            <div class="step-item">
+                <h4>2. Nego & Deal</h4>
+                <p>Kita sepakati harga yang paling masuk akal, lalu lu lakuin pembayaran.</p>
+            </div>
+            <div class="step-item">
+                <h4>3. Terima Beres & Diskusi</h4>
+                <p>Tugas dikerjain sampai tuntas. Setelah file dikirim, admin bakal kasih ringkasan/voice note biar lu paham alur tugasnya!</p>
+            </div>
+        </div>
+    </div>
+
+    <footer id="order">
+        <h2>Slot harian terbatas, bro!</h2>
+        <p>Jangan tunggu sampai deadline mepet ngerusak mood lu.</p>
+        <br>
+        <a href="https://wa.me/6285171594438" class="btn" target="_blank">📲 Hubungi Admin Sekarang</a>
+        <br><br>
+        <p>&copy; 2026 AksaraOverthink. Joki Tugas Gak Pake Ribet.</p>
+    </footer>
+
+</body>
+</html>
